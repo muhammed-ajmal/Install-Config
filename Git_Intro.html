@@ -1,0 +1,237 @@
+<pre><font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt install sshfs
+[sudo] password for ajmalaju: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  sshfs
+0 upgraded, 1 newly installed, 0 to remove and 11 not upgraded.
+Need to get 41.3 kB of archives.
+After this operation, 114 kB of additional disk space will be used.
+Get:1 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic/universe amd64 sshfs amd64 2.8-1 [41.3 kB]
+Fetched 41.3 kB in 7s (6,121 B/s)                                              
+Selecting previously unselected package sshfs.
+(Reading database ... 169331 files and directories currently installed.)
+Preparing to unpack .../archives/sshfs_2.8-1_amd64.deb ...
+Unpacking sshfs (2.8-1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up sshfs (2.8-1) ...
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ apt-get install git
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt-get install git
+[sudo] password for ajmalaju: 
+Sorry, try again.
+[sudo] password for ajmalaju: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 11 not upgraded.
+Need to get 4,731 kB of archives.
+After this operation, 33.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic/main amd64 liberror-perl all 0.17025-1 [22.8 kB]
+Get:2 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main amd64 git-man all 1:2.17.1-1ubuntu0.1 [803 kB]
+Get:3 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main amd64 git amd64 1:2.17.1-1ubuntu0.1 [3,905 kB]
+Fetched 4,731 kB in 20s (238 kB/s)                                             
+Selecting previously unselected package liberror-perl.
+(Reading database ... 169860 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17025-1_all.deb ...
+Unpacking liberror-perl (0.17025-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.17.1-1ubuntu0.1_all.deb ...
+Unpacking git-man (1:2.17.1-1ubuntu0.1) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.17.1-1ubuntu0.1_amd64.deb ...
+Unpacking git (1:2.17.1-1ubuntu0.1) ...
+Setting up git-man (1:2.17.1-1ubuntu0.1) ...
+Setting up liberror-perl (0.17025-1) ...
+Processing triggers for man-db (2.8.3-2) ...
+Setting up git (1:2.17.1-1ubuntu0.1) ...
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo add-apt-repository ppa:git-core/ppa
+ The most current stable version of Git for Ubuntu.
+
+For release candidates, go to https://launchpad.net/~git-core/+archive/candidate .
+ More info: https://launchpad.net/~git-core/+archive/ubuntu/ppa
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+
+Hit:1 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic InRelease
+Get:2 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates InRelease [83.2 kB]
+Ign:3 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Get:4 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease [15.4 kB]  
+Get:5 http://dl.google.com/linux/chrome/deb stable Release [1,189 B]           
+Get:6 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:7 http://archive.canonical.com/ubuntu bionic InRelease                     
+Get:8 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B]         
+Get:9 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security InRelease [83.2 kB]
+Hit:10 http://ppa.launchpad.net/linrunner/tlp/ubuntu bionic InRelease          
+Get:11 http://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,350 B]
+Get:12 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main i386 Packages [124 kB]
+Hit:13 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease       
+Get:14 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main amd64 Packages [138 kB]
+Get:15 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main i386 Packages [3,004 B]
+Get:16 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main Translation-en [53.8 kB]
+Get:17 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main amd64 DEP-11 Metadata [74.8 kB]
+Get:18 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main DEP-11 48x48 Icons [15.8 kB]
+Get:19 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main amd64 Packages [2,996 B]
+Get:20 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/main DEP-11 64x64 Icons [30.5 kB]
+Get:21 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/universe amd64 DEP-11 Metadata [117 kB]
+Get:22 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/universe DEP-11 48x48 Icons [125 kB]
+Get:23 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main Translation-en [2,428 B]
+Get:24 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates/universe DEP-11 64x64 Icons [201 kB]
+Get:25 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-backports/universe amd64 DEP-11 Metadata [5,100 B]
+Get:26 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security/main i386 Packages [85.6 kB]
+Get:27 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security/main amd64 Packages [99.0 kB]
+Get:28 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security/main Translation-en [36.7 kB]
+Get:29 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security/main amd64 DEP-11 Metadata [204 B]
+Get:30 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security/universe amd64 DEP-11 Metadata [2,452 B]
+Fetched 1,377 kB in 7s (195 kB/s)                                              
+Reading package lists... Done
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt update; apt install git
+Hit:1 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic InRelease
+Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Hit:3 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates InRelease
+Hit:4 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-backports InRelease
+Hit:5 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security InRelease
+Hit:6 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease            
+Hit:7 http://dl.google.com/linux/chrome/deb stable Release                     
+Hit:8 http://archive.canonical.com/ubuntu bionic InRelease                     
+Hit:9 http://ppa.launchpad.net/linrunner/tlp/ubuntu bionic InRelease<font color="#C4A000">           </font>
+Hit:10 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease<font color="#C4A000">      </font>
+Reading package lists... Done<font color="#C4A000">                      </font>
+Building dependency tree       
+Reading state information... Done
+15 packages can be upgraded. Run &apos;apt list --upgradable&apos; to see them.
+E: Could not open lock file /var/lib/dpkg/lock - open (13: Permission denied)
+E: Unable to lock the administration directory (/var/lib/dpkg/), are you root?
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt update; sudo apt install git
+Hit:1 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic InRelease
+Hit:2 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-updates InRelease
+Ign:3 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Hit:4 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-backports InRelease
+Hit:5 http://mirrors.piconets.webwerks.in/ubuntu-mirror/ubuntu bionic-security InRelease
+Hit:6 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease            
+Hit:7 http://dl.google.com/linux/chrome/deb stable Release                     
+Hit:8 http://archive.canonical.com/ubuntu bionic InRelease               <font color="#C4A000">      </font>
+Hit:9 http://ppa.launchpad.net/linrunner/tlp/ubuntu bionic InRelease<font color="#C4A000">     </font>
+Hit:10 http://ppa.launchpad.net/webupd8team/java/ubuntu bionic InRelease<font color="#C4A000">      </font>
+Reading package lists... Done<font color="#C4A000">                      </font>
+Building dependency tree       
+Reading state information... Done
+15 packages can be upgraded. Run &apos;apt list --upgradable&apos; to see them.
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.17.1-1ubuntu0.1).
+0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ git --version
+git version 2.17.1
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ git config  --global user.name &quot;xxxxx&quot;
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.email &quot;xxxx@xxxxx.com&quot;
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --list
+user.name=xxxxx
+user.email=xxxx@xxxx.com
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ pwd
+/home/ajmalaju
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -al
+total 132
+drwxr-xr-x 23 ajmalaju ajmalaju 4096 Jun 14 00:34 <font color="#729FCF"><b>.</b></font>
+drwxr-xr-x  3 root     root     4096 Jun 13 16:58 <font color="#729FCF"><b>..</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 23:44 <font color="#729FCF"><b>.android</b></font>
+drwxr-xr-x  3 ajmalaju ajmalaju 4096 Jun 13 23:46 <font color="#729FCF"><b>Android</b></font>
+drwxr-xr-x  4 ajmalaju ajmalaju 4096 Jun 13 23:43 <font color="#729FCF"><b>.AndroidStudio3.1</b></font>
+-rw-------  1 ajmalaju ajmalaju  950 Jun 13 23:38 .bash_history
+-rw-r--r--  1 ajmalaju ajmalaju  220 Jun 13 16:58 .bash_logout
+-rw-r--r--  1 ajmalaju ajmalaju 3771 Jun 13 16:58 .bashrc
+drwx------ 17 ajmalaju ajmalaju 4096 Jun 13 23:58 <font color="#729FCF"><b>.cache</b></font>
+drwx------ 17 ajmalaju ajmalaju 4096 Jun 14 00:12 <font color="#729FCF"><b>.config</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Desktop</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Documents</b></font>
+drwxr-xr-x  4 ajmalaju ajmalaju 4096 Jun 13 23:57 <font color="#729FCF"><b>Downloads</b></font>
+-rw-r--r--  1 ajmalaju ajmalaju 8980 Jun 13 16:58 examples.desktop
+drwx------  2 ajmalaju ajmalaju 4096 Jun 14 00:12 <font color="#729FCF"><b>.gconf</b></font>
+-rw-r--r--  1 ajmalaju ajmalaju   50 Jun 14 00:34 .gitconfig
+drwx------  3 ajmalaju ajmalaju 4096 Jun 13 23:57 <font color="#729FCF"><b>.gnome</b></font>
+drwx------  3 ajmalaju ajmalaju 4096 Jun 13 22:59 <font color="#729FCF"><b>.gnupg</b></font>
+-rw-------  1 ajmalaju ajmalaju  966 Jun 13 23:40 .ICEauthority
+drwxr-xr-x  4 ajmalaju ajmalaju 4096 Jun 13 23:44 <font color="#729FCF"><b>.java</b></font>
+drwx------  3 ajmalaju ajmalaju 4096 Jun 13 18:05 <font color="#729FCF"><b>.local</b></font>
+drwx------  5 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>.mozilla</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Music</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Pictures</b></font>
+drwx------  3 ajmalaju ajmalaju 4096 Jun 13 23:57 <font color="#729FCF"><b>.pki</b></font>
+-rw-r--r--  1 ajmalaju ajmalaju  807 Jun 13 16:58 .profile
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Public</b></font>
+-rw-------  1 ajmalaju ajmalaju 1024 Jun 13 23:47 .rnd
+drwx------  2 ajmalaju ajmalaju 4096 Jun 13 22:59 <font color="#729FCF"><b>.ssh</b></font>
+-rw-r--r--  1 ajmalaju ajmalaju    0 Jun 13 18:45 .sudo_as_admin_successful
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Templates</b></font>
+drwxr-xr-x  2 ajmalaju ajmalaju 4096 Jun 13 18:06 <font color="#729FCF"><b>Videos</b></font>
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ gedit .gitconfig
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~</b></font>$ cd git_space
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space</b></font>$ git clone https://github.com/Ajuajmal/kotlinprograms.git
+Cloning into &apos;kotlinprograms&apos;...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space</b></font>$ cd kotlinprograms
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ touch HelloWorld.kt
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ ls
+HelloWorld.kt  LICENSE  README.md
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git status
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+	<font color="#CC0000">HelloWorld.kt</font>
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git add HelloWorld.kt
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git status
+On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Changes to be committed:
+  (use &quot;git reset HEAD &lt;file&gt;...&quot; to unstage)
+
+	<font color="#4E9A06">new file:   HelloWorld.kt</font>
+
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git commit -m &quot;helloworld&quot; HelloWorld.kt
+[master a835917] helloworld
+ 1 file changed, 6 insertions(+)
+ create mode 100644 HelloWorld.kt
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git push -u orgin master
+fatal: &apos;orgin&apos; does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git push -u orgin master
+fatal: &apos;orgin&apos; does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ git push -u origin master
+Username for &apos;https://github.com&apos;: xxxxx
+Password for &apos;https://Ajuajmal@github.com&apos;:xxxxx 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Ajuajmal/kotlinprograms.git
+   c491ea1..a835917  master -&gt; master
+Branch &apos;master&apos; set up to track remote branch &apos;master&apos; from &apos;origin&apos;.
+<font color="#8AE234"><b>ajmalaju@ins5570</b></font>:<font color="#729FCF"><b>~/git_space/kotlinprograms</b></font>$ 
+</pre>
