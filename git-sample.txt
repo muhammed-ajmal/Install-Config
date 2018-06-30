@@ -1,0 +1,57 @@
+ajmalaju@5570:~$ mkdir git-work
+ajmalaju@5570:~$ cd git-work
+ajmalaju@5570:~/git-work$ git init
+Initialized empty Git repository in /home/ajmalaju/git-work/.git/
+ajmalaju@5570:~/git-work$ cat hello.txt
+cat: hello.txt: No such file or directory
+ajmalaju@5570:~/git-work$ nano hello.txt
+ajmalaju@5570:~/git-work$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ajmalaju@5570:~/git-work$ git add *
+ajmalaju@5570:~/git-work$ git commit -m "hi"
+[master (root-commit) b680204] hi
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+ajmalaju@5570:~/git-work$ nano hello.txt
+ajmalaju@5570:~/git-work$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ajmalaju@5570:~/git-work$ git diff
+diff --git a/hello.txt b/hello.txt
+index 45b983b..f471c09 100644
+--- a/hello.txt
++++ b/hello.txt
+@@ -1 +1,2 @@
+ hi
++hello
+ajmalaju@5570:~/git-work$ rm hello.txt
+ajmalaju@5570:~/git-work$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ajmalaju@5570:~/git-work$ git checkout -- hello.txt
+ajmalaju@5570:~/git-work$ git status
+On branch master
+nothing to commit, working directory clean
+ajmalaju@5570:~/git-work$ nano hello.txt
+ajmalaju@5570:~/git-work$ 
