@@ -1,0 +1,241 @@
+<span style="font-family:monospace"><span style="color:#000000;background-color:#ffffff;">[ajmalaju@archlinux ~]$ su
+</span><br>Password: &#160;<br>[root@archlinux ajmalaju]# dhcpcd
+<br>dev: loaded udev
+<br>no interfaces have a carrier
+<br>forked to background, child pid 932
+<br>[root@archlinux ajmalaju]# ip adrr
+<br>Object "adrr" is unknown, try "ip help".
+<br>[root@archlinux ajmalaju]# ip adrr
+<br>Object "adrr" is unknown, try "ip help".
+<br>[root@archlinux ajmalaju]# ip addr
+<br>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1<br>000
+<br> &#160;&#160;&#160;link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+<br> &#160;&#160;&#160;inet 127.0.0.1/8 scope host lo
+<br> &#160;&#160;&#160;&#160;&#160;&#160;valid_lft forever preferred_lft forever
+<br> &#160;&#160;&#160;inet6 ::1/128 scope host &#160;<br> &#160;&#160;&#160;&#160;&#160;&#160;valid_lft forever preferred_lft forever
+<br>2: enp2s0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc fq_codel state DOWN group <br>default qlen 1000
+<br> &#160;&#160;&#160;link/ether 8c:ec:4b:00:79:65 brd ff:ff:ff:ff:ff:ff
+<br>3: enp0s20f0u3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UNKNOWN <br>group default qlen 1000
+<br> &#160;&#160;&#160;link/ether 56:ea:ec:04:10:90 brd ff:ff:ff:ff:ff:ff
+<br> &#160;&#160;&#160;inet 192.168.42.254/24 brd 192.168.42.255 scope global noprefixroute enp0s20f0u3
+<br> &#160;&#160;&#160;&#160;&#160;&#160;valid_lft forever preferred_lft forever
+<br> &#160;&#160;&#160;inet6 fe80::ddec:b2b9:c1cd:d64f/64 scope link &#160;<br> &#160;&#160;&#160;&#160;&#160;&#160;valid_lft forever preferred_lft forever
+<br>4: wlp3s0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN group d<br>efault qlen 1000
+<br> &#160;&#160;&#160;link/ether d4:6a:6a:e7:c3:17 brd ff:ff:ff:ff:ff:ff
+<br>[root@archlinux ajmalaju]# lspci -k
+<br>00:00.0 Host bridge: Intel Corporation Xeon E3-1200 v6/7th Gen Core Processor Host Bridg<br>e/DRAM Registers (rev 08)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Register<br>s
+<br>00:02.0 VGA compatible controller: Intel Corporation UHD Graphics 620 (rev 07)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell UHD Graphics 620
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: i915
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: i915
+<br>00:04.0 Signal processing controller: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th G<br>en Core Processor Thermal Subsystem (rev 08)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsys<br>tem
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: processor_thermal_device
+<br>00:14.0 USB controller: Intel Corporation Sunrise Point-LP USB 3.0 xHCI Controller (rev <br>21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP USB 3.0 xHCI Controller
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: xhci_hcd
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: xhci_pci
+<br>00:14.2 Signal processing controller: Intel Corporation Sunrise Point-LP Thermal subsyst<br>em (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP Thermal subsystem
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: intel_pch_thermal
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: intel_pch_thermal
+<br>00:15.0 Signal processing controller: Intel Corporation Sunrise Point-LP Serial IO I2C C<br>ontroller #0 (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP Serial IO I2C Controller
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: intel-lpss
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: intel_lpss_pci
+<br>00:16.0 Communication controller: Intel Corporation Sunrise Point-LP CSME HECI #1 (rev 2<br>1)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP CSME HECI
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: mei_me
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: mei_me
+<br>00:17.0 RAID bus controller: Intel Corporation 82801 Mobile SATA Controller [RAID mode] <br>(rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell 82801 Mobile SATA Controller [RAID mode]
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: ahci
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: ahci
+<br>00:1c.0 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #1 (rev f1)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: pcieport
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: shpchp
+<br>00:1c.4 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #5 (rev f1)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: pcieport
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: shpchp
+<br>00:1c.5 PCI bridge: Intel Corporation Sunrise Point-LP PCI Express Root Port #6 (rev f1)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: pcieport
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: shpchp
+<br>00:1f.0 ISA bridge: Intel Corporation Intel(R) 100 Series Chipset Family LPC Controller/<br>eSPI Controller - 9D4E (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Intel(R) 100 Series Chipset Family LPC Controller/eSPI Controlle<br>r - 9D4E
+<br>00:1f.2 Memory controller: Intel Corporation Sunrise Point-LP PMC (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP PMC
+<br>00:1f.3 Audio device: Intel Corporation Sunrise Point-LP HD Audio (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP HD Audio
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: snd_hda_intel
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: snd_hda_intel, snd_soc_skl
+<br>00:1f.4 SMBus: Intel Corporation Sunrise Point-LP SMBus (rev 21)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Sunrise Point-LP SMBus
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: i801_smbus
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: i2c_i801
+<br>01:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Topaz XT [Radeon R7 M<br>260/M265 / M340/M360 / M440/M445] (rev c1)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell Topaz XT [Radeon R7 M260/M265 / M340/M360 / M440/M445]
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: amdgpu
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: amdgpu
+<br>02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL810xE PCI Express Fast E<br>thernet controller (rev 07)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell RTL810xE PCI Express Fast Ethernet controller
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: r8169
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: r8169
+<br>03:00.0 Network controller: Qualcomm Atheros QCA9377 802.11ac Wireless Network Adapter (<br>rev 31)
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsystem: Dell QCA9377 802.11ac Wireless Network Adapter
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel driver in use: ath10k_pci
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;Kernel modules: ath10k_pci
+<br>[root@archlinux ajmalaju]# ip link &#160;<br>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group d<br>efault qlen 1000
+<br> &#160;&#160;&#160;link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+<br>2: enp2s0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc fq_codel state DOWN mode D<br>EFAULT group default qlen 1000
+<br> &#160;&#160;&#160;link/ether 8c:ec:4b:00:79:65 brd ff:ff:ff:ff:ff:ff
+<br>3: enp0s20f0u3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc fq_codel state UNKNOWN <br>mode DEFAULT group default qlen 1000
+<br> &#160;&#160;&#160;link/ether 56:ea:ec:04:10:90 brd ff:ff:ff:ff:ff:ff
+<br>4: wlp3s0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN mode DE<br>FAULT group default qlen 1000
+<br> &#160;&#160;&#160;link/ether d4:6a:6a:e7:c3:17 brd ff:ff:ff:ff:ff:ff
+<br>[root@archlinux ajmalaju]# ip link set wlp3s0 up
+<br>[root@archlinux ajmalaju]# iwlwifi
+<br>bash: iwlwifi: command not found
+<br>[root@archlinux ajmalaju]# lspci | grep -i net
+<br>02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL810xE PCI Express Fast E<br>thernet controller (rev 07)
+<br>03:00.0 Network controller: Qualcomm Atheros QCA9377 802.11ac Wireless Network Adapter (<br>rev 31)
+<br>[root@archlinux ajmalaju]# sudo &#160;&#160;<br>bash: sudo: command not found
+<br>[root@archlinux ajmalaju]# pacman -S wpa_supplicant
+<br>warning: wpa_supplicant-1:2.6-11 is up to date -- reinstalling
+<br>resolving dependencies...
+<br>looking for conflicting packages...
+<br>
+<br>Packages (1) wpa_supplicant-1:2.6-11
+<br>
+<br>Total Installed Size: &#160;4.05 MiB
+<br>Net Upgrade Size: &#160;&#160;&#160;&#160;&#160;0.00 MiB
+<br>
+<br>:: Proceed with installation? [Y/n] y
+<br>(1/1) checking keys in keyring &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking package integrity &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) loading package files &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking for file conflicts &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking available disk space &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Processing package changes...
+<br>(1/1) reinstalling wpa_supplicant &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Running post-transaction hooks...
+<br>(1/2) Reloading system manager configuration...
+<br>(2/2) Arming ConditionNeedsUpdate...
+<br>[root@archlinux ajmalaju]# pacman -S wireless_tools
+<br>resolving dependencies...
+<br>looking for conflicting packages...
+<br>
+<br>Packages (1) wireless_tools-30.pre9-2
+<br>
+<br>Total Download Size: &#160;&#160;0.13 MiB
+<br>Total Installed Size: &#160;0.40 MiB
+<br>
+<br>:: Proceed with installation? [Y/n] y
+<br>:: Retrieving packages...
+<br> wireless_tools-30.pre... &#160;&#160;129.5 KiB &#160;56.5K/s 00:02 [############################] 100%
+<br>(1/1) checking keys in keyring &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking package integrity &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) loading package files &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking for file conflicts &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking available disk space &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Processing package changes...
+<br>(1/1) installing wireless_tools &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Running post-transaction hooks...
+<br>(1/1) Arming ConditionNeedsUpdate...
+<br>[root@archlinux ajmalaju]# pacman -S networkmanager
+<br>warning: networkmanager-1.12.0-1 is up to date -- reinstalling
+<br>resolving dependencies...
+<br>looking for conflicting packages...
+<br>
+<br>Packages (1) networkmanager-1.12.0-1
+<br>
+<br>Total Installed Size: &#160;11.82 MiB
+<br>Net Upgrade Size: &#160;&#160;&#160;&#160;&#160;&#160;0.00 MiB
+<br>
+<br>:: Proceed with installation? [Y/n] y
+<br>(1/1) checking keys in keyring &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking package integrity &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) loading package files &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking for file conflicts &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking available disk space &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Processing package changes...
+<br>(1/1) reinstalling networkmanager &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Running post-transaction hooks...
+<br>(1/3) Reloading system manager configuration...
+<br>(2/3) Reloading device manager configuration...
+<br>(3/3) Arming ConditionNeedsUpdate...
+<br>[root@archlinux ajmalaju]# pacman -S network-manager-applet
+<br>resolving dependencies...
+<br>looking for conflicting packages...
+<br>
+<br>Packages (1) network-manager-applet-1.8.14-1
+<br>
+<br>Total Download Size: &#160;&#160;0.16 MiB
+<br>Total Installed Size: &#160;0.63 MiB
+<br>
+<br>:: Proceed with installation? [Y/n] y
+<br>:: Retrieving packages...
+<br> network-manager-apple... &#160;&#160;167.5 KiB &#160;93.1K/s 00:02 [############################] 100%
+<br>(1/1) checking keys in keyring &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking package integrity &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) loading package files &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking for file conflicts &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(1/1) checking available disk space &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Processing package changes...
+<br>(1/1) installing network-manager-applet &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Running post-transaction hooks...
+<br>(1/3) Updating icon theme caches...
+<br>(2/3) Arming ConditionNeedsUpdate...
+<br>(3/3) Updating the desktop file MIME type cache...
+<br>[root@archlinux ajmalaju]# ystemctl enable NetworkManager.service
+<br>bash: ystemctl: command not found
+<br>[root@archlinux ajmalaju]# systemctl enable NetworkManager.service
+<br>Created symlink /etc/systemd/system/dbus-org.freedesktop.NetworkManager.service -&gt; /usr/<br>lib/systemd/system/NetworkManager.service.
+<br>Created symlink /etc/systemd/system/multi-user.target.wants/NetworkManager.service -&gt; /u<br>sr/lib/systemd/system/NetworkManager.service.
+<br>Created symlink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service -&gt; /usr/l<br>ib/systemd/system/NetworkManager-dispatcher.service.
+<br>Created symlink /etc/systemd/system/network-online.target.wants/NetworkManager-wait-onli<br>ne.service -&gt; /usr/lib/systemd/system/NetworkManager-wait-online.service.
+<br>[root@archlinux ajmalaju]# pacman -S kdeplasma-applets-networkmanagement
+<br>error: target not found: kdeplasma-applets-networkmanagement
+<br>[root@archlinux ajmalaju]# pacman -S kdeplasma-applets-networkmanagement
+<br>error: target not found: kdeplasma-applets-networkmanagement
+<br>[root@archlinux ajmalaju]# pacman -S plasma-nm networkmanager-openvpn
+<br>warning: plasma-nm-5.13.3-1 is up to date -- reinstalling
+<br>resolving dependencies...
+<br>looking for conflicting packages...
+<br>
+<br>Packages (4) openvpn-2.4.6-1 &#160;pkcs11-helper-1.23-1 &#160;networkmanager-openvpn-1.8.4-1
+<br> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;plasma-nm-5.13.3-1
+<br>
+<br>Total Download Size: &#160;&#160;0.69 MiB
+<br>Total Installed Size: &#160;9.66 MiB
+<br>Net Upgrade Size: &#160;&#160;&#160;&#160;&#160;2.57 MiB
+<br>
+<br>:: Proceed with installation? [Y/n] Y
+<br>:: Retrieving packages...
+<br> pkcs11-helper-1.23-1-... &#160;&#160;&#160;65.3 KiB &#160;46.2K/s 00:01 [############################] 100%
+<br> openvpn-2.4.6-1-x86_64 &#160;&#160;&#160;&#160;412.0 KiB &#160;89.4K/s 00:05 [############################] 100%
+<br> networkmanager-openvp... &#160;&#160;231.1 KiB &#160;85.7K/s 00:03 [############################] 100%
+<br>(4/4) checking keys in keyring &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(4/4) checking package integrity &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(4/4) loading package files &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(4/4) checking for file conflicts &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(4/4) checking available disk space &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Processing package changes...
+<br>(1/4) reinstalling plasma-nm &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(2/4) installing pkcs11-helper &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>(3/4) installing openvpn &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>Optional dependencies for openvpn
+<br> &#160;&#160;&#160;easy-rsa: easy CA and certificate handling
+<br> &#160;&#160;&#160;pam: authenticate via PAM [installed]
+<br>(4/4) installing networkmanager-openvpn &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;[############################] 100%
+<br>:: Running post-transaction hooks...
+<br>(1/4) Reloading system manager configuration...
+<br>(2/4) Creating system user accounts...
+<br>(3/4) Creating temporary files...
+<br>(4/4) Arming ConditionNeedsUpdate...
+<br>[root@archlinux ajmalaju]# systemctl stop dhcpcd
+<br>[root@archlinux ajmalaju]# systemctl disable dhcpcd
+<br>[root@archlinux ajmalaju]# systemctl enable NetworkManager
+<br>[root@archlinux ajmalaju]# systemctl start NetworkManager
+<br>[root@archlinux ajmalaju]# <br>
+<br></span>
