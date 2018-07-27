@@ -1,0 +1,8 @@
+When using the custom installer one should use the following recommended sizes:
+
+minmum - avg      folder       type    / location
+------------------------------------------------------
+100mb  - 500mb    /boot       primary  / beginning of disk
+half ram          /swap       logical  / end of disk
+10gb   - 50gb     /           primary /  beginning of disk
+rest of space     /home       primary /  end of disk

@@ -1,0 +1,9 @@
+From: http://www.redhat.com/magazine/022aug06/features/webserver
+You can select automatic partitioning for your hard drive space, but it may not be ideal for this kind of deployment. Here is a suggested breakdown of your partitions, based on a computer with 1GB of RAM and a 160GB hard drive:
+
+/boot     100MB 
+/         10240MB
+swap      2048MB  (this should  be twice the system memory)
+/tmp      5120MB
+/var      133120MB  (this is where the majority of your web content will be stored)
+/var/log  10240MB
