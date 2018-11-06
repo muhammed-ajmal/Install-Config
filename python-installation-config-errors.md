@@ -2,3 +2,12 @@
 Fix:-
 
 `pip3 install --user <package-name>`
+
+
+
+
+
+
+### PIP3,PIP Commands
+
+* Uninstall `pip uninstall <package-name>`
