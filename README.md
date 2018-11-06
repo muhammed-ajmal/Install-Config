@@ -4,3 +4,7 @@ Installation and Configuration Of Android Studio , IntelliJ IDEA,etc in Ubuntu  
 follow the wiki
 
 "https://github.com/Ajuajmal/Install-Config/wiki"
+
+# Python Pacakge Installation Error Fix
+
+[python]()
