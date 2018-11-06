@@ -7,4 +7,4 @@ follow the wiki
 
 # Python Pacakge Installation Error Fix
 
-[python]()
+[Guide](python-installation-config-errors.md)
