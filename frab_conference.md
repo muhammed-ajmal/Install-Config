@@ -16,3 +16,13 @@
 * `cd bin`
 
 * `./setup`
+
+* `cd ..`
+
+* `rails server`
+
+# Run the frab
+
+*`Created admin user (admin@example.org) with password test123`
+
+* 'http://localhost:3000'
