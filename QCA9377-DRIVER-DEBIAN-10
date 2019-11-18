@@ -1,0 +1,14 @@
+sudo apt-get update && apt-get upgrade -y
+sudo apt-get install linux-headers-$(uname -r)
+cd /usr/src/
+sudo wget http://www.kernel.org/pub/linux/kernel/projects/backports/stable/v3.16.2/backports-3.16.2-1.tar.xz
+sudo tar xvfJ backports-3.16.2-1.tar.xz
+cd backports-3.16.2-1
+sudo make defconfig-wifi
+sudo make
+***sudo make install***
+sudo update-initramfs -u
+reboot
+
+https://forum.aircrack-ng.org/index.php/topic,753.msg4053.html?PHPSESSID=tl37t0cb91lcj3nl13c5ldv8c2#msg4053
+https://github.com/ajaybhatia/Qualcomm-Atheros-QCA9377-Wifi-Linux
